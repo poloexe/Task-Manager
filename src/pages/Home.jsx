@@ -35,6 +35,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Carousel */}
           <Carousel
             interval={5000}
             fade
