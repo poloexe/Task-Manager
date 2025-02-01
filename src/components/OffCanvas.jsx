@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { BiMenuAltRight } from "react-icons/bi";
-
+import { Link } from "react-router-dom";
+// import "../App.css";
 
 const OffCanvas = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
@@ -12,20 +12,26 @@ const OffCanvas = ({ name, ...props }) => {
 
   return (
     <>
-      {/* <Button variant="primary" onClick={handleShow} className="me-2">
-        Menu
-      </Button> */}
-
       <div onClick={handleShow}>
         <BiMenuAltRight size={50} />
       </div>
       <Offcanvas show={show} onHide={handleClose} {...props} className="w-75">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title className="fw-bold"> Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <ul className="list-unstyled d-flex flex-column gap-3">
+            <li>
+              <Link className="text-decoration-none nav-list" to="/new-task">
+                New Task
+              </Link>
+            </li>
+            <li>
+              <Link className="text-decoration-none nav-list" to="/all-tasks">
+                All Tasks
+              </Link>
+            </li>
+          </ul>
         </Offcanvas.Body>
       </Offcanvas>
     </>

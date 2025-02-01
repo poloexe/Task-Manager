@@ -11,9 +11,9 @@ const Home = () => {
     <>
       <main>
         <div className="container d-flex d-sm-flex flex-column flex-md-row gap-5 gap-md-0 justify-content-between container px-2 py-5">
-          <div className="d-flex gap-3 flex-column col-sm-5 col-lg-5">
-            <h1 id="manage" className="lh-sm">
-              Manage your task on{" "}  
+          <div className="container d-flex gap-3 flex-column col-sm-5 col-lg-5">
+            <h1 id="manage" className="fs-sm lh-sm">
+              Manage your task on{" "}
               <span style={{ color: "#980cff" }}>TaskDuty</span>
             </h1>
 
@@ -38,18 +38,18 @@ const Home = () => {
           <Carousel
             interval={5000}
             fade
-            style={{ width: "40%" }}
             prevIcon={null}
             nextIcon={null}
+            className="container"
           >
-            <Carousel.Item>
-              <img src={heroImg} className="d-block w-100" alt="Slide 1" />
+            <Carousel.Item className="text-end">
+              <img src={heroImg} alt="Slide 1" />
             </Carousel.Item>
-            <Carousel.Item>
-              <img src={heroImg2} className="d-block w-100" alt="Slide 2" />
+            <Carousel.Item className="text-end">
+              <img src={heroImg2} alt="Slide 2" />
             </Carousel.Item>
-            <Carousel.Item>
-              <img src={heroImg3} className="d-block w-100" alt="Slide 3" />
+            <Carousel.Item className="text-end">
+              <img src={heroImg3} alt="Slide 3" />
             </Carousel.Item>
           </Carousel>
         </div>

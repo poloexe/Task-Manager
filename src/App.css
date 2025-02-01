@@ -56,3 +56,8 @@ nav {
 #delete-btn {
   color: #974fd0;
 }
+
+.nav-list {
+  color: #292929;
+  font-weight: 500;
+}
