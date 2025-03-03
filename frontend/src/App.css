@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
+
+* {
+  font-family: "Signika Negative", serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+#nav-header {
+  color: #2d0050;
+}
+
+.my-tasks {
+  color: #292929;
+}
+
+.task-text {
+  color: #737171;
+}
+
+#urgent {
+  color: #f38383;
+}
+
+#important {
+  color: #73c3a6;
+}
+
+#manage {
+  font-weight: 500;
+}
+
+#gototasks {
+  color: #faf9fb;
+  background-color: #974fd0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#edit-btn,
+#delete-btn {
+  border: 2px solid #974fd0;
+}
+
+#edit-btn {
+  color: #faf9fb;
+  background-color: #974fd0;
+}
+
+#delete-btn {
+  color: #974fd0;
+}
+
+.nav-list {
+  color: #292929;
+  font-weight: 500;
+}
+
