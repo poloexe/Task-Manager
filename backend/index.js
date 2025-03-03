@@ -8,7 +8,11 @@ const dbUri = process.env.mongoUri;
 const app = express();
 import taskRouter from "./routes/taskRouter.js";
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://task-manager-vert-theta.vercel.app/",
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/", taskRouter);
