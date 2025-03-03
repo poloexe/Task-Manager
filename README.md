@@ -8,13 +8,13 @@ Add new tasks 🆕
 
 Mark tasks as completed ✅
 
-Delete tasks ❌
+Delete tasks ❌  
 
-Tasks persist in local storage 🔄
+Tasks persist in mongoDb storage 🔄
 
 Simple UI with React Hooks (useState, useEffect) 🎨
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used  
 
 ⚛️ React
 
