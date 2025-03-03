@@ -10,7 +10,7 @@ import taskRouter from "./routes/taskRouter.js";
 
 app.use(
   cors({
-    origin: "https://task-manager-vert-theta.vercel.app/",
+    origin: "https://task-manager-vert-theta.vercel.app",
   })
 );
 app.use(express.json());
